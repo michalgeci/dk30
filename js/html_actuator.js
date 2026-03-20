@@ -51,6 +51,10 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   var wrapper   = document.createElement("div");
   var inner     = document.createElement("div");
+
+  var innerImg    = document.createElement("img");
+  innerImg.style = "height: 100%; border-radius: 3px;"
+  
   var position  = tile.previousPosition || { x: tile.x, y: tile.y };
   var positionClass = this.positionClass(position);
 
@@ -62,7 +66,36 @@ HTMLActuator.prototype.addTile = function (tile) {
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  
+  // Add images
+  switch (tile.value) {
+    case 2:
+      innerImg.src = "https://picsum.photos/200"
+      inner = innerImg
+      break;
+    case 4:
+      break;
+    case 8:
+      break;
+    case 16:
+      break;
+    case 32:
+      break;
+    case 64:
+      break;
+    case 128:
+      break;
+    case 256:
+      break;
+    case 512:
+      break;
+    case 1024:
+      break;
+    case 2048:
+      break;
+    default:
+      inner.textContent = tile.value;
+  }
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
