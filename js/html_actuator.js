@@ -70,28 +70,48 @@ HTMLActuator.prototype.addTile = function (tile) {
   // Add images
   switch (tile.value) {
     case 2:
-      innerImg.src = "https://picsum.photos/200"
+      innerImg.src = "../images/0002.png"
       inner = innerImg
       break;
     case 4:
+      innerImg.src = "../images/0004.png"
+      inner = innerImg
       break;
     case 8:
+      innerImg.src = "../images/0008.png"
+      inner = innerImg
       break;
     case 16:
+      innerImg.src = "../images/0016.png"
+      inner = innerImg
       break;
     case 32:
+      innerImg.src = "../images/0032.png"
+      inner = innerImg
       break;
     case 64:
+      innerImg.src = "../images/0064.png"
+      inner = innerImg
       break;
     case 128:
+      innerImg.src = "../images/0128.png"
+      inner = innerImg
       break;
     case 256:
+      innerImg.src = "../images/0256.png"
+      inner = innerImg
       break;
     case 512:
+      innerImg.src = "../images/0512.png"
+      inner = innerImg
       break;
     case 1024:
+      innerImg.src = "../images/1024.png"
+      inner = innerImg
       break;
     case 2048:
+      innerImg.src = "../images/2048.png"
+      inner = innerImg
       break;
     default:
       inner.textContent = tile.value;
