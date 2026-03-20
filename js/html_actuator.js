@@ -70,47 +70,47 @@ HTMLActuator.prototype.addTile = function (tile) {
   // Add images
   switch (tile.value) {
     case 2:
-      innerImg.src = "../images/0002.png"
+      innerImg.src = "./images/0002.png"
       inner = innerImg
       break;
     case 4:
-      innerImg.src = "../images/0004.png"
+      innerImg.src = "./images/0004.png"
       inner = innerImg
       break;
     case 8:
-      innerImg.src = "../images/0008.png"
+      innerImg.src = "./images/0008.png"
       inner = innerImg
       break;
     case 16:
-      innerImg.src = "../images/0016.png"
+      innerImg.src = "./images/0016.png"
       inner = innerImg
       break;
     case 32:
-      innerImg.src = "../images/0032.png"
+      innerImg.src = "./images/0032.png"
       inner = innerImg
       break;
     case 64:
-      innerImg.src = "../images/0064.png"
+      innerImg.src = "./images/0064.png"
       inner = innerImg
       break;
     case 128:
-      innerImg.src = "../images/0128.png"
+      innerImg.src = "./images/0128.png"
       inner = innerImg
       break;
     case 256:
-      innerImg.src = "../images/0256.png"
+      innerImg.src = "./images/0256.png"
       inner = innerImg
       break;
     case 512:
-      innerImg.src = "../images/0512.png"
+      innerImg.src = "./images/0512.png"
       inner = innerImg
       break;
     case 1024:
-      innerImg.src = "../images/1024.png"
+      innerImg.src = "./images/1024.png"
       inner = innerImg
       break;
     case 2048:
-      innerImg.src = "../images/2048.png"
+      innerImg.src = "./images/2048.png"
       inner = innerImg
       break;
     default:
@@ -179,7 +179,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "Gratulujem!" : "Game over!";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
